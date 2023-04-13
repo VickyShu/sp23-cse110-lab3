@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Meeting</title>
+    <link rel="icon" type="image/png" href="myicon2.png">
+  </head>
+  <body>
+    <header>
+        <h1>Sales Meeting</h1>
+        <nav>
+            <link><a href="https://www.lucidchart.com/blog/how-to-brainstorm">how to brainstorm</a>
+        </nav>
+        <h2>Meeting</h2>
+        <h3><span>DATE:</span> <span>April 12,</span> <span>2023</span></h3>
+    </header>
+    <main>
+        <section>
+            <h2 id="AttendanceList">Attendance List:</h2>
+            <ol>
+              <li><input type="checkbox" /> Sarah Johnson</li>
+              <li><input type="checkbox" /> John Smith</li>
+              <li><input type="checkbox" /> Emily Davis</li>
+              <li><input type="checkbox" /> Michael Brown</li>
+              <li><input type="checkbox" /> Jennifer Lee</li>
+              <li><input type="checkbox" /> James Wilson</li>
+            </ol>
+        </section>
+
+        <section>
+            <h1>Agenda:</h1>
+            <ul>
+                <li>Review of previous sales performance.</li>
+                <li>Discussion of current market trends and competition.</li>
+                <li>Presentation of new products or services.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h1>Unfinished business from last meeting:</h1>
+            <p>
+                Discussion of any <b>sales strategies</b> or <b>tactics</b> proposed during the previous meeting that have yet to be implemented.
+            </p>
+        </section>
+        
+        <section>
+            <h1>New business:</h1>
+            <details>
+                <summary>Click to expand</summary>
+                <p>Discussion of any <strong>new products</strong> or <strong>services</strong> that were introduced in the previous meeting and their impact on sales.</p>
+            </details>
+        </section>
+
+        <section>
+            <h1>Comments, questions and concerns:</h1>
+            <div>Our strategy is working well in <i>some regions or markets</i>, but not in others.</div>
+            <div>Our strategy is too <em>costly</em> or <em>resource-intensive</em>, and that it may not generate the desired return on investment.</div>
+        </section>
+
+        <section>
+            <h4>Sales strategies</h4>
+            <img
+            src="https://blog.pearagon.com/hubfs/Sales%20Strategy%20tips.png"
+            alt="strategies"
+            width="250"
+            />
+        </section>
+
+        <section>
+            <h2>Audio recording</h2>
+            <audio controls>
+                <source src="sales.mov" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video recording</h2>
+            <video width="640" height="360" controls>
+                <source src="sales.mov" type="video/mp4">
+            </video>
+        </section>
+
+        <section>
+            <h2>Personal Information</h2>
+            <form action="/submit-form" method="post">
+                <fieldset>
+                  <legend>Personal Information</legend>
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name" required>
+                  <br>
+                  <label for="gender">Gender:</label>
+                  <select id="gender-select" name="gender" required>
+                    <option value="">--Select your gender--</option>
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                  </select>
+                  <br>
+                  <label for="ethnicity">Which race or ethnicity best describes you?</label>
+                  <input list="ethnicity" id="ethnicity-input" name="ethnicity" required>
+                  <datalist id="ethnicity">
+                        <option value="American Indian or Alaskan Native">
+                        <option value="Asian / Pacific Islander">
+                        <option value="Black or African American">
+                        <option value="Hispanic">
+                        <option value="White / Caucasian">
+                        <option value="Multiple ethnicity">
+                        <option value="Pefer not to say">
+                  </datalist>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <legend>Message</legend>
+                  <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                </fieldset>
+                <br>
+                <button>Submit</button>
+                <br />
+            </form>
+        </section>
+    </main>
+      <hr />
+      <footer>
+        <h3>Email</h3>
+        <form onsubmit="alert('Submitted')">
+          <input type="text" placeholder="Enter Email Address" />
+          <button>Submit</button>
+        </form>
+        <br />
+        <div>Xin Shu</div>
+      </footer>
+  </body>
+</html>
