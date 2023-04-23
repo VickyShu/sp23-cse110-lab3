@@ -23,10 +23,7 @@
     padding-right: 10px;
     padding-bottom: 30px;
     padding-left: 15px;
-    border-style: dotted;
-    border-color: rgb(226, 87, 207);
-    border-width: 2px;
-    border-radius: 10px;
+    border: dotted rgb(226, 87, 207) 2px;
     font-family: 'Ubuntu', sans-serif;
 }
 .agenda {
@@ -153,5 +150,5 @@ div + div {
     color:rgb(121, 129, 238);
 }
 h2.unfinished{
-    color: rgb(255, 85, 0);
+    color: rgb(245, 98, 24);
 }
