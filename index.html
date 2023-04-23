@@ -5,49 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sales Meeting</title>
     <link rel="icon" type="image/png" href="myicon2.png">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&family=Sigmar&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: linen;
+        }
+    </style>
   </head>
   <body>
     <header>
-        <h1>Sales Meeting</h1>
+        <h1 class="title" >Sales Meeting</h1>
         <nav>
             <ul>
-                <li><a href="https://www.lucidchart.com/blog/how-to-brainstorm">how to brainstorm</a></li>
+                <li class="brain"><a href="https://www.lucidchart.com/blog/how-to-brainstorm">how to brainstorm</a></li>
             </ul>
         </nav>
         <h2>Meeting</h2>
-        <h3><span>DATE:</span> <span>April 12,</span> <span>2023</span></h3>
+        <h3><div><span>DATE:</span> <span>April 12,</span></div> <span>2023</span></h3>
     </header>
     <main>
         <section>
-            <h2 id="AttendanceList">Attendance List:</h2>
+            <h2 id="AttendanceList" class="attendance">Attendance List:</h2>
             <ol>
-              <li><input type="checkbox"> Sarah Johnson</li>
-              <li><input type="checkbox"> John Smith</li>
-              <li><input type="checkbox"> Emily Davis</li>
-              <li><input type="checkbox"> Michael Brown</li>
-              <li><input type="checkbox"> Jennifer Lee</li>
-              <li><input type="checkbox"> James Wilson</li>
+              <li class="people"><input type="checkbox"> Sarah Johnson</li>
+              <li class="people"><input type="checkbox"> John Smith</li>
+              <li class="people"><input type="checkbox"> Emily Davis</li>
+              <li class="people"><input type="checkbox"> Michael Brown</li>
+              <li class="people"><input type="checkbox"> Jennifer Lee</li>
+              <li class="people"><input type="checkbox"> James Wilson</li>
             </ol>
         </section>
 
         <section>
-            <h2>Agenda:</h2>
+            <h2 class="agenda">Agenda:</h2>
             <ul>
-                <li>Review of previous sales performance.</li>
-                <li>Discussion of current market trends and competition.</li>
-                <li>Presentation of new products or services.</li>
+                <li class="item">Review of previous sales performance.</li>
+                <li class="item">Discussion of current market trends and competition.</li>
+                <li class="item">Presentation of new products or services.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Unfinished business from last meeting:</h2>
+            <h2 class="unfinished">Unfinished business from last meeting:</h2>
             <p>
                 Discussion of any <b>sales strategies</b> or <b>tactics</b> proposed during the previous meeting that have yet to be implemented.
             </p>
         </section>
         
         <section>
-            <h2>New business:</h2>
+            <h2 class="new">New business:</h2>
             <details>
                 <summary>Click to expand</summary>
                 <p>Discussion of any <strong>new products</strong> or <strong>services</strong> that were introduced in the previous meeting and their impact on sales.</p>
@@ -55,36 +64,36 @@
         </section>
 
         <section>
-            <h2>Comments, questions and concerns:</h2>
+            <h2 class="comments">Comments, questions and concerns:</h2>
             <div>Our strategy is working well in <i>some regions or markets</i>, but not in others.</div>
             <div>Our strategy is too <em>costly</em> or <em>resource-intensive</em>, and that it may not generate the desired return on investment.</div>
         </section>
 
         <section>
-            <h4>Sales strategies</h4>
+            <h4 class="strategy">Sales strategies</h4>
             <img
             src="https://blog.pearagon.com/hubfs/Sales%20Strategy%20tips.png"
             alt="strategies"
-            width="250"
+            class="img"
             >
         </section>
 
         <section>
-            <h2>Audio recording</h2>
+            <h2 class="audio">Audio recording</h2>
             <audio controls>
                 <source src="sales.mov" type="audio/mpeg">
             </audio>
         </section>
 
         <section>
-            <h2>Video recording</h2>
+            <h2 class="video">Video recording</h2>
             <video width="640" height="360" controls>
                 <source src="sales.mov" type="video/mp4">
             </video>
         </section>
 
         <section>
-            <h2>Personal Information</h2>
+            <h2 class="info">Personal Information</h2>
             <form action="/submit-form" method="post">
                 <fieldset>
                   <legend>Personal Information</legend>
@@ -133,3 +142,22 @@
       </footer>
   </body>
 </html>
+
+<style scoped lang="less">
+.title {
+    font-size: 40px; /* Set the font size to 24 pixels */
+    line-height: 36pt; /* Set the line height to 36 points */
+    margin-top: 20px; /* Set the top margin to 20 pixels */
+    color: rgb(181, 55, 84);
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    border-style: solid;
+    border-color: rgb(87, 110, 226);
+    border-width: 2px;
+    border-radius: 10px;
+    text-decoration: underline;
+    text-align: center;
+}
+</style>

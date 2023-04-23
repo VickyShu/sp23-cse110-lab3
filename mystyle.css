@@ -1,0 +1,157 @@
+.img {
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+.title {
+    font-family: 'Sigmar', cursive;
+}
+.attendance {
+    font-size: 1.5rem;
+    padding: 20px 10px 30px 15px;
+    margin: 20px 10px 30px 15px;
+    border-style: solid;
+    border-color: rgb(87, 226, 170);
+    border-width: 2px;
+    border-radius: 10px;
+    
+}
+.agenda {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    border-style: dotted;
+    border-color: rgb(226, 87, 207);
+    border-width: 2px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.agenda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item {
+    flex-basis: 30%;
+    padding: 10px;
+    background-color: #e8d5d5;
+}
+.unfinished {
+    border-style: dotted;
+    border-color: rgb(226, 87, 131);
+    border-width: 2px;
+    border-radius: 10px;
+}
+.new {
+    border-style: dotted;
+    border-color: rgb(217, 226, 87);
+    border-width: 2px;
+    border-radius: 10px;
+}
+.comments{
+    border-style: dotted;
+    border-color: rgb(87, 194, 226);
+    border-width: 2px;
+    border-radius: 10px;
+}
+.strategy {
+    border-style: solid;
+    border-color: rgb(191, 87, 226);
+    border-width: 2px;
+    border-radius: 10px;
+    height: 40px;
+    width: 40px;
+    max-width: 600px;
+    min-width: 200px;
+    text-align: center;
+}
+.audio {
+    border-style: solid;
+    border-color: rgb(226, 87, 92);
+    border-width: 2px;
+    border-radius: 10px;
+}
+.video {
+    border-style: solid;
+    border-color: rgb(87, 226, 214);
+    border-width: 2px;
+    border-radius: 10px;
+}
+.info {
+    border-style: dotted;
+    border-color: rgb(0, 0, 0);
+    border-width: 2px;
+    border-radius: 10px;
+    display: inline-block;
+}
+.people {
+    border-style: solid;
+    border-color: rgb(87, 207, 226);
+    border-width: 2px;
+    border-radius: 10px;
+    display: inline;
+}
+.brain {
+    position: fixed;
+    top: 4;
+    right: 0;
+}
+button:hover {
+  color: rgb(255, 0, 234);
+}
+a:active {
+  color: #00ff00;
+}
+.attendance {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+    justify-items: center;
+}
+.people {
+    background-color: #e29090;
+    padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+    h2 {
+        color: lightblue;
+    }
+}
+#gender {
+    color:rgb(131, 87, 226)
+}
+* {
+    margin: 3;
+  }
+ol li {
+    color:aqua;
+}
+li[class="item"] {
+    color:purple;
+}
+h2, h3 {
+  font-family: 'Bruno Ace', cursive;
+}
+h4 {
+    color:aqua;
+}
+span {
+    background-color: rgb(239, 146, 180);
+}
+div > span {
+    background-color: rgb(146, 218, 171);
+}
+h2 ~ p {
+    color: rgb(230, 145, 145);
+}
+div + div {
+    color:rgb(121, 129, 238);
+}
+h2.unfinished{
+    color: rgb(255, 85, 0);
+}
